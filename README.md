@@ -79,8 +79,6 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Efficiency300/Efficiency300/output/snake-toxic.svg" width="100%" alt="contribution snake" />
-
 <sub>`// THIS PROFILE IS PROPERTY OF THE CORPORATION. UNAUTHORIZED EMPATHY WILL BE PROSECUTED.`</sub>
 
 </div>
