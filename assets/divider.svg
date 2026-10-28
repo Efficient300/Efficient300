@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="34" viewBox="0 0 900 34">
+  <style>
+    .s { font: 700 13px 'Courier New', 'DejaVu Sans Mono', monospace; letter-spacing: 3px; }
+    .run { animation: run 6s linear infinite; }
+    @keyframes run { from{transform:translateX(0)} to{transform:translateX(-650px)} }
+  </style>
+  <rect width="900" height="34" fill="#0a0f00"/>
+  <rect y="0" width="900" height="2" fill="#d4ff00"/>
+  <rect y="32" width="900" height="2" fill="#ff2bd6"/>
+  <g class="run">
+    <text y="22" class="s" fill="#d4ff00">
+      <tspan x="0">▓▒░ DIVINE LIGHT SEVERED ░▒▓ ✚ ▓▒░ PROFIT ABOVE ALL ░▒▓ ✚ </tspan>
+      <tspan x="650">▓▒░ DIVINE LIGHT SEVERED ░▒▓ ✚ ▓▒░ PROFIT ABOVE ALL ░▒▓ ✚ </tspan>
+      <tspan x="1300">▓▒░ DIVINE LIGHT SEVERED ░▒▓ ✚ ▓▒░ PROFIT ABOVE ALL ░▒▓ ✚ </tspan>
+    </text>
+  </g>
+</svg>

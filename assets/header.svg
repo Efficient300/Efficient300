@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3">
+        <animate attributeName="seed" values="1;7;3;9;5" dur="0.5s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.75  0 0 0 0 1  0 0 0 0 0.1  0 0 0 0.35 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="bile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a2a00"/>
+      <stop offset="0.5" stop-color="#3d5c00"/>
+      <stop offset="1" stop-color="#0a0f00"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .t  { font: 900 82px Impact, 'Arial Black', 'DejaVu Sans', sans-serif; letter-spacing: -2px; }
+    .m  { font: 700 15px 'Courier New', 'DejaVu Sans Mono', monospace; letter-spacing: 2px; }
+    .s  { font: 700 13px 'Courier New', 'DejaVu Sans Mono', monospace; }
+    .g1 { animation: g1 2.3s steps(1) infinite; }
+    .g2 { animation: g2 1.7s steps(1) infinite; }
+    .blink { animation: blink 0.9s steps(1) infinite; }
+    .tick { animation: tick 14s linear infinite; }
+    @keyframes g1 { 0%,100%{transform:translate(0,0)} 12%{transform:translate(-6px,2px)} 14%{transform:translate(4px,-3px)} 48%{transform:translate(0,0)} 62%{transform:translate(8px,0)} 64%{transform:translate(0,0)} }
+    @keyframes g2 { 0%,100%{transform:translate(0,0)} 20%{transform:translate(5px,-2px)} 22%{transform:translate(-7px,3px)} 70%{transform:translate(-3px,0)} 72%{transform:translate(0,0)} }
+    @keyframes blink { 0%{opacity:1} 50%{opacity:0} }
+    @keyframes tick { from{transform:translateX(0)} to{transform:translateX(-1200px)} }
+  </style>
+
+  <rect width="900" height="260" fill="url(#bile)"/>
+  <rect width="900" height="260" filter="url(#noise)"/>
+
+  <!-- warning stripes -->
+  <g fill="#ffe600">
+    <rect y="0" width="900" height="14"/>
+  </g>
+  <g fill="#000">
+    <path d="M0 0h14L0 14z M28 0h14L28 14H14z M56 0h14L56 14H42z M84 0h14L84 14H70z M112 0h14l-14 14H98z M140 0h14l-14 14h-14z M168 0h14l-14 14h-14z M196 0h14l-14 14h-14z M224 0h14l-14 14h-14z M252 0h14l-14 14h-14z M280 0h14l-14 14h-14z M308 0h14l-14 14h-14z M336 0h14l-14 14h-14z M364 0h14l-14 14h-14z M392 0h14l-14 14h-14z M420 0h14l-14 14h-14z M448 0h14l-14 14h-14z M476 0h14l-14 14h-14z M504 0h14l-14 14h-14z M532 0h14l-14 14h-14z M560 0h14l-14 14h-14z M588 0h14l-14 14h-14z M616 0h14l-14 14h-14z M644 0h14l-14 14h-14z M672 0h14l-14 14h-14z M700 0h14l-14 14h-14z M728 0h14l-14 14h-14z M756 0h14l-14 14h-14z M784 0h14l-14 14h-14z M812 0h14l-14 14h-14z M840 0h14l-14 14h-14z M868 0h14l-14 14h-14z M896 0h4v4z"/>
+  </g>
+
+  <text x="30" y="46" class="m" fill="#ffe600">// CONTRACT #0300 — CLEARANCE: <tspan fill="#ff2bd6">TERMINAL</tspan></text>
+  <text x="870" y="46" class="m" fill="#00ff66" text-anchor="end"><tspan class="blink">●</tspan> REC</text>
+
+  <!-- glitch title -->
+  <g transform="translate(30,142)">
+    <text class="t g1" fill="#ff2bd6" opacity="0.9" textLength="740" lengthAdjust="spacingAndGlyphs">EFFICIENCY300</text>
+    <text class="t g2" fill="#00e5ff" opacity="0.9" x="4" textLength="740" lengthAdjust="spacingAndGlyphs">EFFICIENCY300</text>
+    <text class="t" fill="#d4ff00" x="2" stroke="#000" stroke-width="3" paint-order="stroke" textLength="740" lengthAdjust="spacingAndGlyphs">EFFICIENCY300</text>
+  </g>
+
+  <text x="32" y="176" class="m" fill="#fff">MAKSUD // BACKEND OPERATIVE // TASHKENT SECTOR</text>
+  <text x="32" y="198" class="s" fill="#a8ff00">&gt; LIFE IS MEANINGLESS. WRITE CODE ANYWAY.<tspan class="blink">_</tspan></text>
+
+  <!-- stock ticker -->
+  <rect y="218" width="900" height="42" fill="#000"/>
+  <rect y="218" width="900" height="2" fill="#ff2bd6"/>
+  <g class="tick">
+    <text y="245" class="s" fill="#00ff66">
+      <tspan x="10">$PYTHON ▲ +66.6%</tspan>
+      <tspan x="180" fill="#ff3b3b">$JAVASCRIPT ▼ -13.0%</tspan>
+      <tspan x="390">$FASTAPI ▲ +42.0%</tspan>
+      <tspan x="570">$DOCKER ▲ +9.11%</tspan>
+      <tspan x="740" fill="#ff3b3b">$SLEEP ▼ -99.9%</tspan>
+      <tspan x="910">$POSTGRES ▲ +30.0%</tspan>
+      <tspan x="1100" fill="#ffe600">$ORGANS ◆ HOLD</tspan>
+      <tspan x="1210">$PYTHON ▲ +66.6%</tspan>
+      <tspan x="1380" fill="#ff3b3b">$JAVASCRIPT ▼ -13.0%</tspan>
+      <tspan x="1590">$FASTAPI ▲ +42.0%</tspan>
+      <tspan x="1770">$DOCKER ▲ +9.11%</tspan>
+      <tspan x="1940" fill="#ff3b3b">$SLEEP ▼ -99.9%</tspan>
+    </text>
+  </g>
+
+  <rect width="900" height="260" fill="url(#scan)"/>
+</svg>
