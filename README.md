@@ -23,7 +23,7 @@
 + CALLSIGN ........ Efficiency300
 + DIVISION ........ Backend / Python / FastAPI
 + SECTOR .......... Tashkent
-+ SIDE JOBS ....... ASCII generators, Telegram bots, itch.io games
++ SIDE JOBS ....... Computer Vision, Ai Engineer , Game Developers
 - SLEEP ........... not found
 - MERCY ........... deprecated since v0.0.1
 ! STATUS .......... ACTIVE — accepting contracts
